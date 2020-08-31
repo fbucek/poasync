@@ -1,0 +1,26 @@
+[package]
+name = "poasync"
+version = "0.1.0"
+authors = ["Filip Bucek <fbucek@invloop.cz>"]
+description = "PushOver Async"
+edition = "2018"
+license = "MIT"
+repository = "https://github.com/fbucek/poasync"
+readme = "README.md"
+exclude = [".github/*"]
+
+[dependencies]
+# Common 
+tracing = "0.1"
+tracing-log = { version = "0.1", features = ["env_logger"] }
+
+# Data
+serde = { version = "1.0", features = ["derive", "rc"] }
+
+# http
+reqwest = { version = "0.10", features = ["json", "gzip", "stream"] }
+
+# async-await
+futures = "0.3"
+tokio = { version = "0.2", features = ["rt-threaded", "macros", "time", "sync"] }
+async-trait = "0.1"
