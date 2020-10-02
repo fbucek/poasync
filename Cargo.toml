@@ -18,9 +18,5 @@ tracing-log = { version = "0.1", features = ["env_logger"] }
 serde = { version = "1.0", features = ["derive", "rc"] }
 
 # http
-reqwest = { version = "0.10", features = ["json", "gzip", "stream"] }
+reqwest = { version = "0.10", default-features = false, features = ["json"] }
 
-# async-await
-futures = "0.3"
-tokio = { version = "0.2", features = ["rt-threaded", "macros", "time", "sync"] }
-async-trait = "0.1"
