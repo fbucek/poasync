@@ -1,6 +1,6 @@
 [package]
 name = "poasync"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["Filip Bucek <fbucek@invloop.cz>"]
 description = "PushOver Async"
 edition = "2018"

@@ -1,4 +1,4 @@
-#.PHONY: doc
+.PHONY: clean check test build doc publish
 
 all: clean check test build doc
 
@@ -19,3 +19,7 @@ doc:
 
 clean: 
 	cargo clean --doc
+
+# Publishing to crates
+publish: all
+	cargo publish
